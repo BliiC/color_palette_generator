@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-weight: bold;
+    padding-top: 20px;
+    background-color:black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px,     transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+
+
+#palleteContainer {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-box-shadow: 10px 10px 23px -12px rgba(255,255,255,1);
+    -moz-box-shadow: 10px 10px 23px -12px rgba(255,255,255,1);
+    box-shadow: 10px 10px 23px -12px rgba(255,255,255,1);
+    Copy Text
+}
+
+.palleteItem {
+    transition: background-colo .5s;
+}
+
+.palleteItem span {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: inline-block;
+    min-width: 80px;
+}
+
+/* button {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    background: white;
+} */
+
+button{
+    padding: auto;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    width: 100%;
+    position: relative;
+    background: transparent;
+    color: white;
+    columns: #ffa500;
+    text-transform: uppercase;
+    border: 3px solid #ffa500;
+    cursor: pointer;
+    transform: all 0.7s;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+button:hover {
+    color: #1a1a1a;
+}
+span{
+    transition: all 0.7s;
+    z-index: -1;
+}
+button .left {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background: blue;
+}
+button:hover .left{
+    top: 0;
+    right: 0;
+}
+
+button .top {
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: -100;
+    width: 25%;
+    height: 100%;
+    background: red;
+}
+button:hover .top {
+    top: 0;
+    left: 50%;
+}
+
+button .bottom {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 25%;
+    background: yellow;
+}
+button:hover .bottom{
+    top: 0;
+    left: 25%;
+}
+
+button .right {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    background: pink;
+}
+
+button:hover .right{
+    top: 0;
+    left: 0;
+}
